@@ -1,5 +1,5 @@
 import "./Topbar.scss"
-import PersonIcon from '@material-ui/icons';
+import { Person } from "@material-ui/icons"
 
 
 function TopBar() {
@@ -9,7 +9,7 @@ function TopBar() {
         <div className="left">
           <a href="#intro" className="logo">YASIRKHANA.</a>
           <div className="itemContainer">
-            <PersonIcon/>
+            <Person/>
             
           </div>        
         </div>
