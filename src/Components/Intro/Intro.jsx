@@ -1,4 +1,5 @@
 import "./Intro.scss"
+import React from "react"
 
 function Intro() {
   return (

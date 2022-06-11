@@ -1,4 +1,6 @@
 import "./works.scss"
+import React from "react"
+
 
 function Works() {
   return (

@@ -1,4 +1,6 @@
 import "./testimonials.scss"
+import React from "react"
+
 
 function Testimonials() {
   return (

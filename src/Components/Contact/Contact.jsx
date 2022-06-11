@@ -1,4 +1,6 @@
 import "./contact.scss"
+import React from "react"
+
 
 function Contact() {
   return (
