@@ -5,7 +5,8 @@
     position: fixed;
     height: 70px;
     top: 0% ;
-    z-index: 2;
+    transition: all 1s ease;
+    z-index: 3;
 
     .wrapper{
         padding: 10px 30px;
@@ -57,13 +58,11 @@
                     width: 100%;
                     height: 3px;
                     transform-origin: left;
-                    transition: all 2s ease;
+                    transition: all 1s ease;
                     background-color: rgb(14, 14, 96);
                 }
 
-                .line1{}
-                .line2{}
-                .line3{}
+               
             }
         }
 

@@ -3,9 +3,9 @@ import React from "react"
 import { Person } from "@material-ui/icons"
 import { Email } from "@material-ui/icons"
 
-function TopBar() {
+function TopBar({menuOpen,setMenuOpen}) {
   return (
-    <div className="topbar active">
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">YASIRKHANA.</a>
@@ -21,7 +21,7 @@ function TopBar() {
           </div>        
         </div>
         <div className="right">
-          <div className="humburger">
+          <div className="humburger" onClick={()=>{setMenuOpen(!menuOpen)}}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
