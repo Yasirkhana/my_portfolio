@@ -3,9 +3,9 @@ import "./Portfolio.scss"
 function Portfolio() {
   return (
     <>
-    <div className="">
+    <div className="portfolio" id="portfolio">
 
-    Portfolio
+   
     </div>
     </>
   )

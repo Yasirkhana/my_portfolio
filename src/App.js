@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Components/MyStyles.css"
+import "./MyStyles.scss"
 import TopBar from './Components/TopBar/TopBar'
 import Intro from "./Components/Intro/Intro"
 import Portfolio from  "./Components/Portfolio/Portfolio"
@@ -10,10 +10,15 @@ import Works from "./Components/Works/Works"
 function App() {
   return (
     <>
-    <TopBar/>
-    <div className="sections">
-      <Intro/>
-      <Portfolio/>
+    <div className="app">
+      <TopBar/>
+      <div className="sections">
+        <Intro/>
+        <Portfolio/>
+        <Works/>
+        <Testimonial/>
+        <Contact/>
+      </div>
     </div>
     </>
 
