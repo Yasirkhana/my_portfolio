@@ -3,8 +3,15 @@ import React, { useEffect, useRef } from "react"
 import { init } from 'ityped'
 
 function Intro() {
+  const textRef  =useRef();
 
   useEffect(()=>{
+    
+    init(textRef.current,
+       { showCursor: false,
+         strings: ['Developer',
+          'Designer', 'Marketer' ] })
+
 
   },[])
 
@@ -19,7 +26,7 @@ function Intro() {
         <div className="wrapper">
           <h2>Hi there, I'm </h2>
           <h1>Yasir Ahmad</h1>
-          <h3>Freelance <span>Web developer</span></h3>
+          <h3>Freelance <span ref={textRef }></span></h3>
           <a href="#portfolio">
             <img src="assets/down.png" alt="down arrow" />
           </a>
