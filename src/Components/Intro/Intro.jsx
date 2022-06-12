@@ -1,10 +1,30 @@
 import "./Intro.scss"
-import React from "react"
+import React, { useEffect, useRef } from "react"
+import { init } from 'ityped'
 
 function Intro() {
+
+  useEffect(()=>{
+
+  },[])
+
   return (
     <div className="intro" id="intro">
-
+      <div className="leftPart">
+        <div className="imgConatiner">
+          <img src="assets/mypic.png" alt="Yasir" />
+        </div>
+      </div>
+      <div className="rightPart">
+        <div className="wrapper">
+          <h2>Hi there, I'm </h2>
+          <h1>Yasir Ahmad</h1>
+          <h3>Freelance <span>Web developer</span></h3>
+          <a href="#portfolio">
+            <img src="assets/down.png" alt="down arrow" />
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
